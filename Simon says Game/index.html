@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simon Says Game</title>
+    <style>
+        .red-text { color: rgb(169, 0, 0); }
+        .blue-text { color: rgb(3, 3, 166); }
+        .green-text { color: rgb(0, 95, 0); }
+        .yellow-text { color: rgb(181, 181, 3); }
+    </style>
+</head>
+
+<body>
+    <h1><span class="red-text">Simo</span><span class="blue-text">n Sa</span><span class="green-text">ys G</span><span class="yellow-text">ame</span></h1>
+    <h2>Start game(press any key to start)</h2>
+    <div class="container">
+        <div class="row">
+            <div class="btn" id="red"></div>
+            <div class="btn" id="green"></div>
+        </div>
+        <div class="row">
+            <div class="btn" id="blue"></div>
+            <div class="btn" id="yellow"></div>
+        </div>
+    </div>
+    <div id="high">
+        <button type="button" id="highscore">Highest Level reached: 0</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
