@@ -4,7 +4,8 @@ let colors = ["red", "green", "blue", "yellow"];
 let level = document.querySelector("h2");
 // console.log(level);
 let l = 0;
-let highestLevel = 0;
+let highestLevel = parseInt(localStorage.getItem('highest')) || 0;
+highest.innerText = `Highest Level reached: ${highestLevel}`;
 let highest = document.querySelector("#highscore");
 console.log(highest);
 let body = document.querySelector("body");
@@ -77,7 +78,8 @@ btns.forEach(e => {
 });
 function levelup() {
     l++;
-    highestLevel=Math.max(l,highestLevel);
+    highestLevel = Math.max(l, highestLevel);
+    localStorage.setItem("highest", highestLevel);
     highest.innerText = `Highest Level reached: ${highestLevel}`;
     level.innerText = "Level " + l;
     user = [];
