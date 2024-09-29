@@ -5,8 +5,8 @@ let level = document.querySelector("h2");
 // console.log(level);
 let l = 0;
 let highestLevel = parseInt(localStorage.getItem('highest')) || 0;
-highest.innerText = `Highest Level reached: ${highestLevel}`;
 let highest = document.querySelector("#highscore");
+highest.innerText = `Highest Level reached: ${highestLevel}`;
 console.log(highest);
 let body = document.querySelector("body");
 let start = false,
